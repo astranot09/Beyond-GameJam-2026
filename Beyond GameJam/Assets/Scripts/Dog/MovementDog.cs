@@ -9,6 +9,9 @@ public class MovementDog : MonoBehaviour
     private Vector2 dir;
     private Rigidbody2D rb;
 
+    [Header("Crouch")]
+    public bool crouch = false;
+
     private void Start()
     {
         groundCheck = GameObject.Find("GroundCheck").GetComponent<GroundCheckDog>();
@@ -17,7 +20,8 @@ public class MovementDog : MonoBehaviour
 
     private void Update()
     {
-        rb.linearVelocity = new Vector2(dir.normalized.x * speed, rb.linearVelocityY);
+        //rb.linearVelocity = new Vector2(dir.normalized.x * speed, rb.linearVelocityY);
+        rb.linearVelocity = dir.normalized * speed;
         Debug.Log(rb.linearVelocityX);
     }
 
@@ -31,6 +35,13 @@ public class MovementDog : MonoBehaviour
         if (ctx.performed && groundCheck.isGrounded)
         {
             rb.linearVelocityY = jumpPower;
+        }
+    }
+    public void Crouch(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
+            crouch = true;
         }
     }
 }

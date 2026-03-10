@@ -6,8 +6,8 @@ public class MovementKakak : MonoBehaviour
     [SerializeField] private Transform dogTransform;
 
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float checkDistance = 1f;
-
+    [SerializeField] private float checkDistance = 2f;
+    [SerializeField] private float maxDistance = 4f;
     Rigidbody2D rb;
 
 
@@ -22,10 +22,15 @@ public class MovementKakak : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, dogTransform.position);
 
+        if(distance > maxDistance)
+        {
+            Debug.Log("pppp");
+        }
+
         if (distance > checkDistance)
         {
             Vector2 direction = (dogTransform.position - transform.position).normalized;
-            rb.linearVelocity = new Vector2(moveSpeed * direction.x, rb.linearVelocity.y);
+            rb.linearVelocity = moveSpeed * direction;
         }
         else
             rb.linearVelocityX = 0;
