@@ -6,7 +6,7 @@ public class MovementDog : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     private GroundCheckDog groundCheck;
-    private Vector2 dir;
+    public Vector2 dir;
     private Rigidbody2D rb;
 
     [Header("Crouch")]
