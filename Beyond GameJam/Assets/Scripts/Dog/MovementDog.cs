@@ -12,6 +12,8 @@ public class MovementDog : MonoBehaviour
     [Header("Crouch")]
     public bool crouch = false;
 
+    [Header("Animation")]
+    public bool lockMovement = false;
     private void Start()
     {
         groundCheck = GameObject.Find("GroundCheck").GetComponent<GroundCheckDog>();
@@ -20,7 +22,7 @@ public class MovementDog : MonoBehaviour
 
     private void Update()
     {
-        //rb.linearVelocity = new Vector2(dir.normalized.x * speed, rb.linearVelocityY);
+        if (lockMovement) return;
         rb.linearVelocity = dir.normalized * speed;
         Debug.Log(rb.linearVelocityX);
     }
