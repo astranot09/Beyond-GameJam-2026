@@ -4,16 +4,16 @@ public class InteractableObjects : MonoBehaviour, IInteractables
 {
     public void Interact()
     {
-        
+        Debug.Log("has interacted");
     }
 
     public void OffFocus()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("not looked");
     }
 
     public void OnFocus()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("is looked");
     }
 }
