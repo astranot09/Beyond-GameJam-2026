@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -16,7 +15,12 @@ public class PolisiTidurObstacle : MonoBehaviour
     [SerializeField] private float speed = 2f;
 
     [SerializeField] private float delayAnim = 3f;
-    
+    [SerializeField] private Vector2 dir;
+
+
+    [Header("Triggered")]
+    [SerializeField] private bool onTrigger = false;
+    [SerializeField] private bool alreadyDidIt = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,17 +31,33 @@ public class PolisiTidurObstacle : MonoBehaviour
         {
             dog = collision.GetComponent<Rigidbody2D>();
             dogMove = collision.GetComponent<MovementDog>();
-            dogMove.lockMovement = true;
-
-            Vector2 dir = (startPivot.position - collision.transform.position).normalized;
-            dog.linearVelocity = dir * speed;
-
-            movingToPivot = true;
+            onTrigger = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Dog"))
+        {
+            onTrigger = false;
+            movingToPivot = false;
+            dogMove.lockMovement = false;
+            if(!alreadyDidIt)
+                DogScript.instance.health--;
         }
     }
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Q) && onTrigger)
+        {
+            dir = (startPivot.position - dog.gameObject.transform.position).normalized;
+            dog.linearVelocity = dir * speed;
+            onTrigger = false;
+            dogMove.lockMovement = true;
+            movingToPivot = true;
+            alreadyDidIt = true;
+        }
+
         if (movingToPivot && dog != null)
         {
             float distance = Vector2.Distance(startPivot.position, dog.transform.position);
@@ -51,4 +71,5 @@ public class PolisiTidurObstacle : MonoBehaviour
             }
         }
     }
+
 }

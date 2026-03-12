@@ -23,7 +23,10 @@ public class MovementDog : MonoBehaviour
     private void Update()
     {
         if (lockMovement) return;
-        rb.linearVelocity = dir.normalized * speed;
+        if(!crouch)
+            rb.linearVelocity = dir.normalized * speed;
+        else if(crouch)
+            rb.linearVelocity = dir.normalized * speed * 0.3f;
         Debug.Log(rb.linearVelocityX);
     }
 
@@ -43,7 +46,7 @@ public class MovementDog : MonoBehaviour
     {
         if (ctx.performed)
         {
-            crouch = true;
+            crouch = !crouch;
         }
     }
 }
