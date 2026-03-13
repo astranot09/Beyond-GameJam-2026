@@ -6,7 +6,7 @@ public class StationaryObstacle : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Dog"))
         {
-            DogScript.instance.health--;
+            DogScript.instance.TakeDamage(1f);
         }
     }
 }

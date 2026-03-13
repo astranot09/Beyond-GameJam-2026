@@ -12,7 +12,7 @@ public class RantingObstacle : MonoBehaviour
             if (!dog.crouch && !giveDamage)
             {
                 giveDamage = true;
-                DogScript.instance.health--;
+                DogScript.instance.TakeDamage(1f);
             }
         }
     }

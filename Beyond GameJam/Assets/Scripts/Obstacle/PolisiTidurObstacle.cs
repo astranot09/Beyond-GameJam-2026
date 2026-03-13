@@ -41,8 +41,8 @@ public class PolisiTidurObstacle : MonoBehaviour
             onTrigger = false;
             movingToPivot = false;
             dogMove.lockMovement = false;
-            if(!alreadyDidIt)
-                DogScript.instance.health--;
+            if (!alreadyDidIt)
+                DogScript.instance.TakeDamage(1f);
         }
     }
 

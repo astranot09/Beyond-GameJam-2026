@@ -13,7 +13,7 @@ public class DogScript : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public float health;
+    [SerializeField] private float health;
     public float woof;
     
     public void Woof(InputAction.CallbackContext ctx)
@@ -23,8 +23,10 @@ public class DogScript : MonoBehaviour
             woof++;
         }
     }
-    private void FixedUpdate()
+    public void TakeDamage(float damage)
     {
-        
+        health-=damage;
+        if(health <= 0)
+            SceneController.instance.RestartLevel();
     }
 }

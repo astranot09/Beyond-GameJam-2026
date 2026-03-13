@@ -14,10 +14,14 @@ public class MovementDog : MonoBehaviour
 
     [Header("Animation")]
     public bool lockMovement = false;
+
+    [Header("Movement Kakak")]
+    public MovementKakak movementKakak;
     private void Start()
     {
         groundCheck = GameObject.Find("GroundCheck").GetComponent<GroundCheckDog>();
         rb = GetComponent<Rigidbody2D>();
+        movementKakak.moveSpeed = speed;
     }
 
     private void Update()
@@ -47,6 +51,11 @@ public class MovementDog : MonoBehaviour
         if (ctx.performed)
         {
             crouch = !crouch;
+            if (crouch)
+                movementKakak.moveSpeed = speed * 0.3f;
+            else if (!crouch)
+                movementKakak.moveSpeed = speed;
+
         }
     }
 }
