@@ -7,6 +7,7 @@ public class MovementDog : MonoBehaviour
     [SerializeField] private float jumpPower;
     private GroundCheckDog groundCheck;
     public Vector2 dir;
+    public bool isCrouching;
     private Rigidbody2D rb;
 
     [Header("Crouch")]
@@ -52,9 +53,17 @@ public class MovementDog : MonoBehaviour
         {
             crouch = !crouch;
             if (crouch)
+            {
+                isCrouching = true;
                 movementKakak.moveSpeed = speed * 0.3f;
+            }
+                
             else if (!crouch)
+            {
+                isCrouching = false;
                 movementKakak.moveSpeed = speed;
+            }
+                
 
         }
     }
