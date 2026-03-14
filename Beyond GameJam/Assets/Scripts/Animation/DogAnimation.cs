@@ -2,6 +2,16 @@ using UnityEngine;
 
 public class DogAnimation : MonoBehaviour
 {
+    public static DogAnimation instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+
     private Animator dogAnimator;
     private Rigidbody2D rb;
 
@@ -23,5 +33,10 @@ public class DogAnimation : MonoBehaviour
         }
 
 
+    }
+
+    public void WoofTrigger()
+    {
+        dogAnimator.SetTrigger("isBarking");
     }
 }

@@ -17,12 +17,21 @@ public class DogScript : MonoBehaviour
     public float woof;
 
     [SerializeField] private MovementKakak movementKakak;
-    
+
+
+
+    private void Start()
+    {
+        movementKakak = GameObject.FindGameObjectWithTag("Brother").GetComponent<MovementKakak>();
+    }
+
+
     public void Woof(InputAction.CallbackContext ctx)
     {
         if (ctx.started)
         {
             Debug.Log("jalan oi");
+            DogAnimation.instance.WoofTrigger();
             //SoundManager.instance.PlaySFX(SoundManager.instance.bark);
             movementKakak.DontPanic();
         }
