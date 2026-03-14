@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MovementKakak : MonoBehaviour
@@ -11,8 +12,8 @@ public class MovementKakak : MonoBehaviour
     Rigidbody2D rb;
 
     [Header("Panic")]
-    [SerializeField] private bool isPanic = false;
-
+    public bool isPanic = false;
+    public bool alreadyTriggered;
 
     private void Start()
     {
@@ -44,10 +45,22 @@ public class MovementKakak : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("PanicMode"))
+        if (collision.CompareTag("PanicMode") && !alreadyTriggered)
         {
             isPanic = true;
+            alreadyTriggered = true;
             rb.linearVelocityX = 0;
         }
+    }
+
+    public void DontPanic()
+    {
+        isPanic = false;
+        StartCoroutine(delay());
+    }
+    private IEnumerator delay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        alreadyTriggered = false;
     }
 }

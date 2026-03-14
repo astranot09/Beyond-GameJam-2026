@@ -15,12 +15,16 @@ public class DogScript : MonoBehaviour
 
     [SerializeField] private float health;
     public float woof;
+
+    [SerializeField] private MovementKakak movementKakak;
     
     public void Woof(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (ctx.started)
         {
-            woof++;
+            Debug.Log("jalan oi");
+            //SoundManager.instance.PlaySFX(SoundManager.instance.bark);
+            movementKakak.DontPanic();
         }
     }
     public void TakeDamage(float damage)
