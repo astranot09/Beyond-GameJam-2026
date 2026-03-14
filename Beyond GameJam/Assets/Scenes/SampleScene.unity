@@ -1112,6 +1112,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7190640820853721678, guid: 44f36a5ee9624494580757e638247843, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1507644428}
+    - targetCorrespondingSourceObject: {fileID: 7190640820853721678, guid: 44f36a5ee9624494580757e638247843, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1507644432}
   m_SourcePrefab: {fileID: 100100000, guid: 44f36a5ee9624494580757e638247843, type: 3}
 --- !u!1 &476538296
 GameObject:
@@ -1333,7 +1336,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49191093, y: -1.672, z: -10}
+  m_LocalPosition: {x: -0.49064016, y: -1.672, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1933,7 +1936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &855182646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3057,6 +3060,7 @@ GameObject:
   - component: {fileID: 1352155894}
   - component: {fileID: 1352155895}
   - component: {fileID: 1352155896}
+  - component: {fileID: 1352155897}
   m_Layer: 7
   m_Name: Brother
   m_TagString: Brother
@@ -3238,6 +3242,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1352155897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352155890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db65afe5076a714d937de1bf52a181b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1385313331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3339,7 +3355,7 @@ Transform:
   m_GameObject: {fileID: 1385313331}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49191093, y: -1.672, z: -10}
+  m_LocalPosition: {x: -0.49064016, y: -1.672, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3716,6 +3732,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   woof: 0
+--- !u!114 &1507644432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507644411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9688ec713bb04234bbadcf1f37ae8ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1520458746
 GameObject:
   m_ObjectHideFlags: 0
