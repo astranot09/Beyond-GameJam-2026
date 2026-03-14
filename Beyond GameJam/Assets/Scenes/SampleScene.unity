@@ -1010,6 +1010,18 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7175923963563908181, guid: 44f36a5ee9624494580757e638247843, type: 3}
+      propertyPath: m_Size.x
+      value: 2.2549999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175923963563908181, guid: 44f36a5ee9624494580757e638247843, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5852814
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175923963563908181, guid: 44f36a5ee9624494580757e638247843, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5664081158067600766, guid: 75aa55b82347215439656b82bb9752b1, type: 3}
     - target: {fileID: 7190640820853721678, guid: 44f36a5ee9624494580757e638247843, type: 3}
       propertyPath: m_Name
       value: Dog
@@ -1056,19 +1068,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711469747679931192, guid: 44f36a5ee9624494580757e638247843, type: 3}
       propertyPath: m_Size.x
-      value: 2.000001
+      value: 1.8432958
       objectReference: {fileID: 0}
     - target: {fileID: 8711469747679931192, guid: 44f36a5ee9624494580757e638247843, type: 3}
       propertyPath: m_Size.y
-      value: 0.93012905
+      value: 0.8549074
       objectReference: {fileID: 0}
     - target: {fileID: 8711469747679931192, guid: 44f36a5ee9624494580757e638247843, type: 3}
       propertyPath: m_Offset.x
-      value: -0.0000000044491273
+      value: 0.41059238
       objectReference: {fileID: 0}
     - target: {fileID: 8711469747679931192, guid: 44f36a5ee9624494580757e638247843, type: 3}
       propertyPath: m_Offset.y
-      value: -0.03732199
+      value: -0.99014956
       objectReference: {fileID: 0}
     - target: {fileID: 8711469747679931192, guid: 44f36a5ee9624494580757e638247843, type: 3}
       propertyPath: m_Direction
@@ -1308,7 +1320,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49064016, y: -1.672, z: -10}
+  m_LocalPosition: {x: -0.49191093, y: -1.672, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3089,7 +3101,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -8500049181266501019, guid: b80c039ceb47fc5468c5dd7594729578, type: 3}
+  m_Sprite: {fileID: -2702321302883952953, guid: 2c0c9055482a8b449a528324e24d4704, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3109,7 +3121,7 @@ Transform:
   m_GameObject: {fileID: 1352155890}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.99, y: -3.04, z: 0}
+  m_LocalPosition: {x: -4.76, y: -1.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3176,8 +3188,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0.05890751, y: -1.5862875}
+  m_Size: {x: 1.8415318, y: 2.026669}
   m_Direction: 0
 --- !u!95 &1352155896
 Animator:
@@ -3189,7 +3201,7 @@ Animator:
   m_GameObject: {fileID: 1352155890}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ee877228e8324a346a776a6af4d98924, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3302,7 +3314,7 @@ Transform:
   m_GameObject: {fileID: 1385313331}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49064016, y: -1.672, z: -10}
+  m_LocalPosition: {x: -0.49191093, y: -1.672, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3620,7 +3632,7 @@ Animator:
   m_GameObject: {fileID: 1507644411}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4d2a949a59581d40a580817d696f8e5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
