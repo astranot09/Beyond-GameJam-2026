@@ -13,4 +13,12 @@ public class UIManager : MonoBehaviour
     {
         creditPanel.SetActive(!creditPanel.activeSelf);
     }
+    public void reloadScene()
+    {
+        SceneController.instance.RestartLevel();
+    }
+    public void ExitGame()
+    {
+        SceneController.instance.Exit();
+    }
 }
