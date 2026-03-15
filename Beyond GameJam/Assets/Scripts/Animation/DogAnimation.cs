@@ -23,7 +23,7 @@ public class DogAnimation : MonoBehaviour
 
     private void Update()
     {
-        if (Mathf.Abs(rb.linearVelocityX) > 0 || Mathf.Abs(rb.linearVelocityY) > 0)
+        if (Mathf.Abs(rb.linearVelocityX) > 0.1 || Mathf.Abs(rb.linearVelocityY) > 0.1)
         {
             dogAnimator.SetBool("isWalking", true);
         }
