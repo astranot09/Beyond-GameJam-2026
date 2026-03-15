@@ -1,6 +1,6 @@
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
-
 public class MovementKakak : MonoBehaviour
 {
     [SerializeField] private GameObject dog;
@@ -14,12 +14,18 @@ public class MovementKakak : MonoBehaviour
     [Header("Panic")]
     public bool isPanic = false;
     public bool alreadyTriggered;
+    [SerializeField] private float PanicTime = 5f;
+    [SerializeField] private float currTime;
+
+    [SerializeField] private CinemachineImpulseSource impulseSource;
 
     private void Start()
     {
         dog = GameObject.FindGameObjectWithTag("Dog");
         dogTransform = dog.transform;
         rb = GetComponent<Rigidbody2D>();
+        impulseSource = GetComponent<CinemachineImpulseSource>();
+        currTime = PanicTime;
     }
     private void Update()
     {
@@ -40,6 +46,17 @@ public class MovementKakak : MonoBehaviour
             else
                 rb.linearVelocityX = 0;
         }
+        if (isPanic)
+        {
+            if(currTime > 0)
+            {
+                currTime -= Time.deltaTime;
+            }
+            else
+            {
+                DogScript.instance.TakeDamage(1);
+            }
+        }
 
     }
 
@@ -50,12 +67,14 @@ public class MovementKakak : MonoBehaviour
             isPanic = true;
             alreadyTriggered = true;
             rb.linearVelocityX = 0;
+            impulseSource.GenerateImpulse();
         }
     }
 
     public void DontPanic()
     {
         isPanic = false;
+        currTime = PanicTime;
         StartCoroutine(delay());
     }
     private IEnumerator delay()
