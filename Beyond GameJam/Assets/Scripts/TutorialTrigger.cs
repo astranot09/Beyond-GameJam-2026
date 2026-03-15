@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class TutorialTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject panelTutorial;
+    [SerializeField] private GameObject tutorialText;
+    [SerializeField] private string tutorialName;
     [SerializeField] private bool OnAwake = false;
 
     private void Start()
@@ -13,7 +15,7 @@ public class TutorialTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Dog"))
+        if (collision.CompareTag("Dog")&& !OnAwake)
         {
             TutorialTime();
         }
@@ -21,15 +23,7 @@ public class TutorialTrigger : MonoBehaviour
 
     public void TutorialTime()
     {
-        if (panelTutorial.activeSelf)
-        {
-            panelTutorial.SetActive(false);
-            Time.timeScale = 1f;
-        }
-        else if (!panelTutorial.activeSelf)
-        {
-            panelTutorial.SetActive(true);
-            Time.timeScale = 0f;
-        }
+        var x = Instantiate(tutorialText, FindObjectOfType<Canvas>().transform);
+        x.GetComponent<TutorialScript>().SpawnInfo(tutorialName);
     }
 }
