@@ -56,5 +56,8 @@ TagManager:
   - name: DepanPlayer
     uniqueID: 856789715
     locked: 0
+  - name: UI
+    uniqueID: 2870673233
+    locked: 0
   m_RenderingLayers:
   - Default

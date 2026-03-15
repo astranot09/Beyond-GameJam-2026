@@ -1062,7 +1062,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49191093, y: -1.672, z: -10}
+  m_LocalPosition: {x: -0.48665118, y: -1.672, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1271,7 +1271,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 000000004b57855cc92e5b8ddd27f993
+  m_ApplyToSortingLayers: 000000004b57855cc92e5b8ddd27f99351ff1aab
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1611,8 +1611,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: -1424294063
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &855182649
 RectTransform:
@@ -3934,7 +3934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5366395887409960699, guid: de6707eef6388c34aa6928a64d470ca3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.49191093
+      value: -0.48665118
       objectReference: {fileID: 0}
     - target: {fileID: 5366395887409960699, guid: de6707eef6388c34aa6928a64d470ca3, type: 3}
       propertyPath: m_LocalPosition.y
