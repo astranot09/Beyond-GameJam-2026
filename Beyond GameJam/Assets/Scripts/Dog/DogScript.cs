@@ -32,7 +32,7 @@ public class DogScript : MonoBehaviour
         {
             Debug.Log("jalan oi");
             DogAnimation.instance.WoofTrigger();
-            //SoundManager.instance.PlaySFX(SoundManager.instance.bark);
+            SoundManager.instance.PlaySFX(SoundManager.instance.bark);
             movementKakak.DontPanic();
         }
     }

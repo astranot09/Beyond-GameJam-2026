@@ -26,6 +26,7 @@ public class Manstacle : MonoBehaviour
         if (isTriggered)
         {
             Debug.Log("AAAAAAHHHHH");
+            
             transform.position = Vector2.MoveTowards(transform.position, goList[currIndex].position, speed * Time.deltaTime);
             if (Vector2.Distance(transform.position, goList[currIndex].position) < 0.3f)
             {

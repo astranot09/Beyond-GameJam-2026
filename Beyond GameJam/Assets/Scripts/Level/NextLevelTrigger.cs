@@ -18,6 +18,7 @@ public class NextLevelTrigger : MonoBehaviour
     {
         var x = Instantiate(tutorialText, FindObjectOfType<Canvas>().transform);
         x.GetComponent<TutorialScript>().SpawnInfo(finishName);
+        StartCoroutine(TeleportNextScene());
     }
 
     IEnumerator TeleportNextScene()

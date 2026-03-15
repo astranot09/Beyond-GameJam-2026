@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 30bcf2f54c7217347a7890d4385a1708
+guid: c6d9124581c9d5c4bb5a92e941042e2f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4417401635331231069
-    second: NPC2_walking2_0
+      213: 668128157579002237
+    second: NPC3_walk_back1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC2_walking2_0
+      name: NPC3_walk_back1_0
       rect:
         serializedVersion: 2
-        x: 628
-        y: 272
-        width: 357
-        height: 663
+        x: 835
+        y: 172
+        width: 388
+        height: 695
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a23ad7fd9c32b2c0800000000000000
-      internalID: -4417401635331231069
+      spriteID: d71cee8f40ba54900800000000000000
+      internalID: 668128157579002237
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      NPC2_walking2_0: -4417401635331231069
+      NPC3_walk_back1_0: 668128157579002237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
