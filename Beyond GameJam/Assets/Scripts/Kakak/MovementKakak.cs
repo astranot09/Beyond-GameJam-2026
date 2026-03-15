@@ -44,7 +44,7 @@ public class MovementKakak : MonoBehaviour
                 rb.linearVelocity = moveSpeed * direction;
             }
             else
-                rb.linearVelocityX = 0;
+                rb.linearVelocity = Vector2.zero;
         }
         if (isPanic)
         {

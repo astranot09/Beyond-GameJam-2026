@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ea43c462a83f68a4ea9f25452f47bac2
+guid: d1797efb98180e74e9006c72f309ed88
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5283355831201206967
-    second: POHON_0
+      213: -2573811505721006489
+    second: Button_Options_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: POHON_0
+      name: Button_Options_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 553
-        height: 547
+        x: 544
+        y: 398
+        width: 712
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b29cb4d220425940800000000000000
-      internalID: 5283355831201206967
+      spriteID: 766afaa721cf74cd0800000000000000
+      internalID: -2573811505721006489
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      POHON_0: 5283355831201206967
+      Button_Options_0: -2573811505721006489
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

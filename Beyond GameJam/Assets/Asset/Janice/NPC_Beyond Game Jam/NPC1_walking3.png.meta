@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ea43c462a83f68a4ea9f25452f47bac2
+guid: 3e6eb9e0b846aa141afd31d31e1e6369
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5283355831201206967
-    second: POHON_0
+      213: 5931763202654448517
+    second: NPC1_walking3_0
+  - first:
+      213: -8177709704855370045
+    second: NPC1_walking3_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: POHON_0
+      name: NPC1_walking3_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 553
-        height: 547
+        x: 1029
+        y: 255
+        width: 262
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b29cb4d220425940800000000000000
-      internalID: 5283355831201206967
+      spriteID: 58ba3f9743bd15250800000000000000
+      internalID: 5931763202654448517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1_walking3_1
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 305
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6c4ddc950f28e80800000000000000
+      internalID: -8177709704855370045
       vertices: []
       indices: 
       edges: []
@@ -148,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      POHON_0: 5283355831201206967
+      NPC1_walking3_0: 5931763202654448517
+      NPC1_walking3_1: -8177709704855370045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
